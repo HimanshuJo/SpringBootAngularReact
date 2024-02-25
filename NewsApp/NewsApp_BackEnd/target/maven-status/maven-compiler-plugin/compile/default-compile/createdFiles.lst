@@ -1,0 +1,5 @@
+com\essenbazar\newsapp\configuration\WebConfig.class
+com\essenbazar\newsapp\model\News.class
+com\essenbazar\newsapp\controller\NewsController.class
+com\essenbazar\newsapp\service\RSSFeedService.class
+com\essenbazar\newsapp\NewsApp.class

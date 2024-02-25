@@ -1,0 +1,13 @@
+1. Property '<property_name>' has no initializer and is not definitely assigned in the constructor.
+
+	Initialize the Property:
+		
+		You can initialize the articles property in the constructor, or, if you're fetching data asynchronously. For example:
+
+			articles: any[] = [];
+
+	Definite Assignment Assertion Modifier:
+		
+		You can use the definite assignment assertion modifier (!) to tell TypeScript that you will ensure the property is assigned a value before it's used. For example:
+
+			articles!: any[];

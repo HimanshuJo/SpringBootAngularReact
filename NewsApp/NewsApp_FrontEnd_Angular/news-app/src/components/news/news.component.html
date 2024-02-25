@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .article-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        .article-link:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px;">Titel</th>
+                <th style="border: 1px solid black; padding: 8px;">Quelle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let article of articles">
+                <td style="border: 1px solid black; padding: 8px;">
+                    <a href="{{article.link}}" target="_blank" class="article-link">{{article.title}}</a>
+                </td>
+                <td style="border: 1px solid black; padding: 8px;">{{article.source}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

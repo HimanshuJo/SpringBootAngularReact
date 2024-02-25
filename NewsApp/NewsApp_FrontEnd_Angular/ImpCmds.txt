@@ -1,0 +1,25 @@
+CMD:
+
+	Angular version:
+
+		ng v
+
+	NPM version:
+
+		npm --version
+
+-------
+
+Angular:
+
+	New App:
+
+		ng new <app_name>
+
+	New Service:
+
+		ng generate service <service_name>
+
+	New Component:
+
+		ng generate component <component_name>
