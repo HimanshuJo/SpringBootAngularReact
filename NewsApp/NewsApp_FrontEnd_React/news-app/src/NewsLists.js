@@ -16,7 +16,7 @@ const NewsList=()=>{
 		fetchArticles();
 	}, []);
 
-	  return (
+	return (
 	    <div>
 	      <h1>News List</h1>
 	      <table style={{ borderCollapse: 'collapse', width: '100%' }}>
@@ -30,7 +30,7 @@ const NewsList=()=>{
 	          {articles.map((article, index) => (
 	            <tr key={index}>
 	              <td style={{ border: '1px solid black', padding: '8px' }}>
-	                <a href={article.link} target="_blank" class="article-link">
+	                <a href={article.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'black', cursor: 'pointer' }}>
 	                	{article.title}
 	                </a>
 	              </td>
@@ -40,7 +40,7 @@ const NewsList=()=>{
 	        </tbody>
 	      </table>
 	    </div>
-  	);
+	  );
 };
 
 export default NewsList;
