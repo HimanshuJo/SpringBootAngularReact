@@ -23,9 +23,7 @@ public class NewsController {
 		allNews.addAll(rssFeedService.getNewsFromRss("http://newsfeed.zeit.de/index"));
 		allNews.addAll(rssFeedService.getNewsFromRss("https://www.muensterschezeitung.de/rss/feed/mz_lokales"));
 		allNews.addAll(rssFeedService.getNewsFromRss("https://www.spiegel.de/index.rss"));
-		allNews.addAll(rssFeedService.getNewsFromRss("https://www.handelsblatt.com/contentexport/feed/top-themen"));
 		allNews.addAll(rssFeedService.getNewsFromRss("https://news.google.com/rss?hl=de&gl=DE&ceid=DE:de"));
-		allNews.addAll(rssFeedService.getNewsFromRss("https://www.rki.de/cln_049/nn_205908/SiteGlobals/Functions/RSSFeed/RSSGenerator.xml"));
 		allNews.addAll(rssFeedService.getNewsFromRss("https://blog.urbansportsclub.com/en/feed/"));
 		allNews.addAll(rssFeedService.getNewsFromRss("https://fitnessgoesoffice.com/feed/"));
 		Collections.shuffle(allNews);
